@@ -19,6 +19,9 @@ def long_planeteer_calls(planeteer_calls)
   # Return the boolean result of this check
   planeteer_calls. do |calls|
     calls.length > 4
+    
+    %w[ant bear cat].all? { |word| word.length >= 3 } #=> true
+    
   end
 end
 
